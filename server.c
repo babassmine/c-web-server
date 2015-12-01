@@ -40,4 +40,5 @@ int main(int argc, char **argv) {
         free(buf);
                 Close(connfd);
     }
+    exit(0)
 }
