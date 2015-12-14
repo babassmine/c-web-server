@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
     listenfd = open_listenfd(port);
     rio_t rio;
 
-        char* buf = (char*) malloc(1024);
+    char* buf = (char*) malloc(1024);
     while (1) {
         clientlen = sizeof(clientaddr);
         connfd = Accept(listenfd, (SA *)&clientaddr, &clientlen);
